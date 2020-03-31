@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  header
+    nav.navbar.fixed-top-left.navbar-expand-lg.navbar-dark.scrolling-navbar
+      a.navbar-brand(href='#')
+        strong TayLog
+      #navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/loginpage', role='button')
+              | Login 
+              span.sr-only
+          li.nav-item
+            a.nav-link(href='/users/register', role='button') Register
+    .view.intro.hm-purple-light(style='height: 400px;')
+  .text-center.py-5
+    .container
+      .row
+        .col-md-12
+          h1 The Worlds Leading College Basketball Catalog
+          

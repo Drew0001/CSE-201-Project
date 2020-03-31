@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+
+input {
+    background: transparent;
+    border: none;
+}
+input, select, textarea {
+    color: rgb(199, 196, 196);
+}
+body {
+    background-image: url('http://www.tokkoro.com/picsup/3049990-blurred_bokeh_dark_lights_night.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+label {
+    color: rgb(199, 196, 196);
+}
+.container {
+    width: 300px;
+    height: 800px;
+    position:fixed; 
+    left:500px; 
+    top:200px;
+    background-color:rgb(116, 114, 114);
+    opacity: .4;
+}
+.form {
+    width: 200px;
+    height: 400px;
+    position:fixed; 
+    left:100px; 
+    top:50px;
+}
+th {
+    color: rgb(253, 249, 249);
+}
+.login_btn{
+    color: black;
+    background-color: rgb(128, 128, 128);
+    width: 100px;
+    margin-right: 25%;
+    margin-top: 30%;
+    }
+    
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+.btn a { 
+    color: white;
+ } 
+    

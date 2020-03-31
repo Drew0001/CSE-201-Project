@@ -1,0 +1,15 @@
+extends editlayout
+
+block content
+    .container
+        form(action='/edits/' + accounts.id, method='post', name='submitform')
+            h3=accounts.website
+            input(name='website', type='text', placeholder='Edit Website')
+            br
+            h3=accounts.username
+            input(name='username', type='text', placeholder='Edit Username') 
+            br                       
+            h3=accounts.password
+            input(name='password', type='text', placeholder='Edit Password')
+            br         
+            button#submit.btn.btn-outline-light(type='submit') Save Changes

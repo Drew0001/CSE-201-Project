@@ -1,0 +1,52 @@
+/*-------
+To run enter in terminal: 'cat ddl.text |sqlite3 database.sqlite3'
+-----------*/
+
+/*-------
+admin table
+-----------*/
+
+CREATE TABLE IF NOT EXISTS Users (
+    id INTEGER PRIMARY KEY,
+    username STRING NOT NULL,
+    password STRING NOT NULL,
+    team STRING NOT NULL
+    createdAt DATE,
+    updatedAt DATE
+
+);
+
+
+INSERT INTO Users
+VALUES(10, 'admin', 'password', '', '');
+
+
+
+
+/*-------
+team
+-----------*/
+
+CREATE TABLE IF NOT EXISTS Accounts (
+    id INTEGER PRIMARY KEY,
+    username FOREIGN KEY,
+    teamName STRING NOT NULL,
+    createdAt DATE,
+    updatedAt DATE
+);
+
+
+
+INSERT INTO Accounts
+VALUES('0', 'admin', 'UCLA', '', '');
+
+
+
+
+
+
+
+/*-------
+cleanup
+-----------*/
+.exit

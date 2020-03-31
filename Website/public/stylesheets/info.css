@@ -1,0 +1,13 @@
+.container h1 {
+color: rgb(116, 114, 114);;
+}
+body {
+    background:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/zyk69ra/evening-traffic-the-city-lights-motion-blur-abstract-background_vyrjvg67__F0000.png);
+}
+.container {
+    width: 300px;
+    height: 800px;
+    position:fixed; 
+    left:600px; 
+    top:200px;
+}

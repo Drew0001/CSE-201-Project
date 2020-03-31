@@ -1,0 +1,19 @@
+
+body {
+  background: url(https://wallpapercave.com/wp/wp1858847.jpg);
+  background-size: cover;
+}
+  
+.navbar {
+  background-color: transparent;
+}
+
+h1 {
+  color: white;
+  transform: translate(30px,180px);
+  
+}
+
+        
+
+

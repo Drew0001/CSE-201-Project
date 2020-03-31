@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+body {
+background-image: url('https://wallpaperaccess.com/full/798768.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0, 0, 0, 0.63) !important;
+text-align: center;
+}
+
+
+
+.card-header h3{
+color: white;
+}
+
+
+input, select, textarea {
+    color: rgb(199, 196, 196);
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+color: black;
+background-color: rgb(128, 128, 128);
+width: 100px;
+margin-right: 35%;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+#username {
+    background: transparent;
+    border: none;
+    margin-left: 28%;
+
+
+}
+#password {
+    background: transparent;
+    border: none;
+    margin-left: 28%;
+}
