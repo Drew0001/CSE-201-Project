@@ -1,0 +1,20 @@
+extends userloginlayout
+
+block content
+    .container
+      .d-flex.justify-content-center.h-100
+        .card
+          .card-header
+            h3 Sign In
+          .card-body
+            form(action='/users/login', method='post', name='submitform1')
+              .input-group.form-group
+                //.input-group-prepend
+                  span.input-group-text
+                input#username(type='text', name='username', placeholder='           username')
+              .input-group.form-group
+                //.input-group-prepend
+                  span.input-group-text
+                input#password(type='password', name='password', placeholder='           password')
+              .form-group
+                button.btn.float-right.login_btn(type='submit') Login
