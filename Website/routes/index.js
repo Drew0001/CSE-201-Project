@@ -21,13 +21,14 @@ router.get('/', async function(req, res, next) {
  }
 );
 router.get('/manager', async function(req, res, next) {
+  /*
   accounts = await models.Accounts.findAll({
     where: {
-      UserId: req.session.user.id
+     // UserId: req.session.user.id
     }
   });
    
-   
+  */ 
   res.render('manager.pug', { title: 'Basketball Manager'});
  });
 

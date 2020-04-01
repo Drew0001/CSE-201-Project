@@ -15,6 +15,7 @@ router.post('/register', async function (req, res, next) {
 
   try {
     user = await models.User.findOne({where: { username: req.body.username}});
+    console.log(user);
   } catch(err) {
     errors.push(err);
   }
@@ -27,7 +28,7 @@ router.post('/register', async function (req, res, next) {
     errors.push("Passwords do not match.");
   }
 
-  if (!(req.body.email && req.body.username && req.body.password && req.body.confirm_password)) {
+  if (!(req.body.username && req.body.password && req.body.confirm_password)) {
     errors.push("All fields are required.");
   }
 
@@ -87,7 +88,7 @@ router.post('/login', async function (req, res, next) {
 });
 
 router.get('/logout', function (req, res, next) {
-  req.session.destroy();
+ // req.session.destroy();
   res.redirect('/');
 });
 
