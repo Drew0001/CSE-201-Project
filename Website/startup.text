@@ -1,0 +1,8 @@
+"Start website server"
+1. go to root folder (Website) in terminal/command line
+2. type 'nodemon dev' in terminal to start server
+3. type 'localhost:3000' in browser to access website
+
+"Wipe database/create new database"
+1. Type 'rm database.sqlite3' into Terminal 
+2. Type 'cat ddl.text |sqlite3 database.sqlite3' into erminal to create new database
