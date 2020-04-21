@@ -8,11 +8,18 @@ var id = 0;
 
    router.post('/create', async function (req, res,) {
     const body = {
-    website: req.body.website,
-    username: req.body.username,
-    password: req.body.password,
+    teamname: req.body.teamname,
+    confname: req.body.confname,
+    player1: req.body.player1,
+    player2: req.body.player2,
+    player3: req.body.player3,
+    player4: req.body.player4,
+    player5: req.body.player5,
+    wins: req.body.wins,
+    loses: req.body.loses,
     UserId: req.session.user.id
     }
+    console.log("hi");
     const create = await models.Accounts.create(body);
     res.json(create); 
 

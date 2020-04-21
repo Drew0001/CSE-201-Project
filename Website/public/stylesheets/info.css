@@ -2,12 +2,34 @@
 color: rgb(116, 114, 114);;
 }
 body {
-    background:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/zyk69ra/evening-traffic-the-city-lights-motion-blur-abstract-background_vyrjvg67__F0000.png);
+    background:url(https://images.wallpapersden.com/image/download/ncaa-basketball-2015-ncaa-basketball-scores_21483_3840x2160.jpg);
 }
-.container {
-    width: 300px;
-    height: 800px;
+.container1 {
+    width: 400%;
+    height: 500px;
     position:fixed; 
-    left:600px; 
+    left:700px; 
     top:200px;
+}
+.container2 {
+    background-color: darkgray;
+    opacity: .6;
+    width: 400px;
+    height: 500px;
+    position:relative; 
+    float: middle;
+}
+.container2 h1 {
+
+text-align: center;
+font-size: 50px;
+}
+.container2 h2 {
+margin-left: 25%;
+margin-bottom: 30px;
+}
+.container2 h3 {
+margin-left: 1%;
+font-size:20px;
+margin-bottom: 50px;
 }

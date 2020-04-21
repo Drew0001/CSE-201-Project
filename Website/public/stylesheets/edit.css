@@ -1,5 +1,5 @@
 body {
-    background:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/zyk69ra/evening-traffic-the-city-lights-motion-blur-abstract-background_vyrjvg67__F0000.png);
+    background:url(https://images.wallpaperscraft.com/image/basketball_ball_sport_115164_3840x2400.jpg);
 }
 .container {
     width: 300px;
@@ -7,6 +7,10 @@ body {
     position:fixed; 
     left:600px; 
     top:200px;
+}
+label {
+color: white;
+font-size: 30px;
 }
 input {
     background: transparent;

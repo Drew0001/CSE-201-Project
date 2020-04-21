@@ -3,18 +3,7 @@ extends managerlayout
 block content
         
         
-    .form   
-        form(name='submitform')
-            h1 Add New Team
-            label(for='website') Team:
-            input#website(name='website', type='text', placeholder='Enter Team Name')
-            label(for='username') Confrence
-            input#username(name='username', type='text', placeholder='Enter Confrence')
-            label(for='password') Players
-            input#password(name='password', type='text', placeholder='Enter Players')
-            button.btn.float-right.login_btn(type='submit' onclick='manager()') Create
-        
-        
+   
         
         
         
@@ -25,29 +14,36 @@ block content
         
     
     .container       
-        table#mytable.table.table-bordred.table-striped
+        table#mytable.table.table-bordred.table
             thead
                 tr
                 th Team
 
 
                 th Confrence
-                        
+
+                th W
+
+                th L                     
                 
                 th Functions 
                           
                 tbody
-                
-                    tr
-                        
+                each account in accounts
+                        tr
+                            input#id(value=account.id, type='hidden')
                             td
-                                p=hi
+                                p#website=account.teamname
                             td
-                                p=hi
+                                p=account.confname
+                            td
+                                p=account.wins
+                            td
+                                p=account.loses
                             td
                                 button.btn.btn-outline-light.btn-xs
-                                    a(href='/pass/') Show Players
+                                    a(href='/pass/' + account.id) Show Players
                                 button.btn.btn-outline-light.btn-xs 
-                                    a(href='/remove/') Remove
+                                    a(href='/remove/' + account.id) Remove
                                 button.btn.btn-outline-light.btn-xs
-                                    a(href='/edits/') Edit Team Info
+                                    a(href='/edits/' + account.id) Edit Team Info

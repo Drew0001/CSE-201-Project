@@ -1,7 +1,15 @@
 extends infolayout
 
 block content
-    .container
-        h1= 'Your Password Is: ' + accounts.password 
+    .container1
+        .container2
+            h1= accounts.teamname
+            h2= 'Starting Linup'
+            h3= 'Center:' + accounts.player1
+            h3= 'Shooting Guard:' + accounts.player2
+            h3= 'Point Guard:' + accounts.player3
+            h3= 'Small Foward:' + accounts.player4
+            h3= 'Power Foward:' + accounts.player5
+
         
 

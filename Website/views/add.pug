@@ -1,0 +1,26 @@
+extends addlayout
+
+block content
+ 
+ 
+ 
+ 
+ 
+    .form   
+        form(action='/create', method='post', name='submitform')
+            h1 Add New Team
+            label(for='teamname') Team:
+            input#teamname(name='teamname', type='text', placeholder='Enter Team Name')
+            label(for='confname') Confrence:
+            input#confname(name='confname', type='text', placeholder='Enter Confrence')
+            label(for='password') Starting Lineup:
+            input#player1(name='player1', type='text', placeholder='Enter Center')
+            input#player2(name='player2', type='text', placeholder='Enter Shooting guard')
+            input#player3(name='player3', type='text', placeholder='Enter Point Guard')
+            input#player4(name='player4', type='text', placeholder='Enter Small Forward')
+            input#player5(name='player5', type='text', placeholder='Enter Power Foward')
+            label(for='password') Record:
+            input#wins(name='wins', type='text', placeholder='Enter Wins')
+            input#loses(name='loses', type='text', placeholder='Enter Loses')
+            button.btn.float-right.login_btn(type='submit' ) Create
+            

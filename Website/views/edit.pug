@@ -1,15 +1,35 @@
 extends editlayout
 
 block content
-    .container
-        form(action='/edits/' + accounts.id, method='post', name='submitform')
-            h3=accounts.website
-            input(name='website', type='text', placeholder='Edit Website')
-            br
-            h3=accounts.username
-            input(name='username', type='text', placeholder='Edit Username') 
-            br                       
-            h3=accounts.password
-            input(name='password', type='text', placeholder='Edit Password')
-            br         
-            button#submit.btn.btn-outline-light(type='submit') Save Changes
+    .container1
+        .container2
+            form(action='/edits/'+ accounts.id, method='post', name='submitform')
+                //h3= Change Team Information
+                label(for='teamname') Change Teamname:
+                    input#teamname(name='teamname', type='text', placeholder='Edit Team Name')
+                br
+                label(for='confname') Change Confrence:
+                    input#confname(name='confname', type='text', placeholder='Edit Confrence') 
+                br
+                                      
+                label(for='player1') Change Center:
+                    input#player1(name='player1', type='text', placeholder='Edit Center')
+                br
+                label(for='player2') Change Shooting Guard:
+                    input#player2(name='player2', type='text', placeholder='Edit Shooting Guard')
+                br
+                label(for='player3') Change Point Guard:
+                    input#player3(name='player3', type='text', placeholder='Edit Point Guard')
+                br
+                label(for='player4') Change Small Forward:
+                    input#player4(name='player4', type='text', placeholder='Edit Small Forward')
+                br
+                label(for='player5') Change Power Forward:
+                    input#player5(name='player5', type='text', placeholder='Edit Power Forward')
+                br 
+                
+                label(for='wins') Change Wins
+                    input#wins(name='wins', type='text', placeholder='Edit Wins')    
+                label(for='losses') Change Losses
+                    input#losses(name='losses', type='text', placeholder='Edit Losses')     
+                button#submit.btn.btn-outline-light(type='submit') Save Changes

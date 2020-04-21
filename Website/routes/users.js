@@ -69,9 +69,10 @@ router.post('/login', async function (req, res, next) {
     var auth = await bcrypt.compare(password, user.password);
 
     if (auth) {
-      //req.session.user = user;
-      //var userid = req.session.user.id
-      //console.log(userid);
+     console.log(userid);
+     req.session.user = user;
+     var userid = req.session.user.id
+      
 
       return res.redirect('/manager');
     } else {
@@ -88,7 +89,7 @@ router.post('/login', async function (req, res, next) {
 });
 
 router.get('/logout', function (req, res, next) {
- // req.session.destroy();
+  req.session.destroy();
   res.redirect('/');
 });
 

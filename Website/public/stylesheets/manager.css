@@ -9,7 +9,7 @@ input, select, textarea {
     color: rgb(199, 196, 196);
 }
 body {
-    background-image: url('http://www.tokkoro.com/picsup/3049990-blurred_bokeh_dark_lights_night.jpg');
+    background-image: url('https://i.pinimg.com/originals/c2/8d/98/c28d98c2c6cee412defcbfa3204098f6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -19,21 +19,31 @@ label {
     color: rgb(199, 196, 196);
 }
 .container {
-    width: 300px;
+    width: 700px;
     height: 800px;
     position:fixed; 
-    left:500px; 
-    top:200px;
-    background-color:rgb(116, 114, 114);
-    opacity: .4;
+    left:250px; 
+    top:100px;
+    background-color:rgb(109, 103, 103);
+    opacity: .8;
 }
 .form {
-    width: 200px;
-    height: 400px;
+    width: 300px;
+    height: 600px;
     position:fixed; 
-    left:100px; 
+    left:700px; 
     top:50px;
+    background-color:rgb(8, 8, 8);
+    opacity: .8;
 }
+.form label{
+    font-size: 40px;
+}
+
+.form h1 {
+   color: rgb(202, 199, 199);
+}
+
 th {
     color: rgb(253, 249, 249);
 }
@@ -41,7 +51,7 @@ th {
     color: black;
     background-color: rgb(128, 128, 128);
     width: 100px;
-    margin-right: 25%;
+    margin-right: 35%;
     margin-top: 30%;
     }
     

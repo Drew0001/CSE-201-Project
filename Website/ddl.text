@@ -7,7 +7,7 @@ admin table
 -----------*/
 
 CREATE TABLE IF NOT EXISTS Users (
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     username STRING NOT NULL,
     password STRING NOT NULL,
     
@@ -17,8 +17,10 @@ CREATE TABLE IF NOT EXISTS Users (
 );
 
 
-INSERT INTO Users
-VALUES(10, 'admin', 'password', '', '');
+
+INSERT INTO Users(username, password)
+VALUES('admintest', 'password');
+
 
 
 
@@ -26,23 +28,35 @@ VALUES(10, 'admin', 'password', '', '');
 /*-------
 team
 -----------*/
- /*
+ 
 CREATE TABLE IF NOT EXISTS Accounts (
-    id INTEGER PRIMARY KEY,
-    username STRING NOT NULL,
-    teamName STRING NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    teamname STRING NOT NULL,
+    confname STRING NOT NULL,
+    player1 STRING NOT NULL,
+    player2 STRING NOT NULL,
+    player3 STRING NOT NULL,
+    player4 STRING NOT NULL,
+    player5 STRING NOT NULL,
+    wins INTEGER NOT NULL,
+    loses INTEGER NOT NULL,
+    UserId INTEGER FORIEGN KEY NOT NULL,
     createdAt DATE,
     updatedAt DATE
+    
+
 );
 
 
 
-INSERT INTO Accounts
-VALUES('0', 'admin', 'UCLA', '', '');
+
+INSERT INTO Accounts(teamname, confname, player1, player2, player3, player4, player5, wins, loses, UserId)
+VALUES('NCLA', 'Big Ten', 'Alex Olesinski', 'Cody Riley', 'Jules Bernard', 'Jaime Jaquez Jr.', 'Chris Smith', '9', '9', '0');
 
 
 
-*/
+
+
 
 
 
