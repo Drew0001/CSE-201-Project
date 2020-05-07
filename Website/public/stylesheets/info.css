@@ -15,7 +15,7 @@ body {
     background-color: darkgray;
     opacity: .6;
     width: 400px;
-    height: 500px;
+    height: 700px;
     position:relative; 
     float: middle;
 }
@@ -33,3 +33,6 @@ margin-left: 1%;
 font-size:20px;
 margin-bottom: 50px;
 }
+.navbar {
+    background-color: transparent;
+  }

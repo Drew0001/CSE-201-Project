@@ -26,3 +26,6 @@ input, select, textarea {
 .container h3{
     color: white;
 }
+.navbar {
+    background-color: transparent;
+  }

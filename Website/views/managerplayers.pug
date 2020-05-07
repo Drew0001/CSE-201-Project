@@ -1,0 +1,75 @@
+extends managerplayerslayout
+
+block content
+    .container-1    
+        nav.navbar.fixed-top-left.navbar-expand-lg.navbar-dark.scrolling-navbar
+            a.navbar-brand(href='#')
+                strong TayLog
+            #navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/users/logout', role='button')
+                            | Logout 
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/manager', role='button')
+                            | Team Manager
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/accountadmin', role='button')
+                            | View Account
+                            span.sr-only
+                    
+        
+
+
+
+
+
+
+
+
+            
+        .view.intro.hm-purple-light(style='height: 400px;')        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    .container       
+        table#mytable.table.table-bordred.table
+            thead
+                tr
+                th Centers
+
+                th Shooting Guards
+
+                th Point Guards
+
+
+                th Small Forward
+
+                th Power Forwards
+                    
+               
+                          
+                tbody
+                each account in accounts
+                        tr
+                            input#id(value=account.id, type='hidden')
+                            td
+                                p#website=account.player1
+                            td
+                                p=account.player2
+                            td
+                                p=account.player3
+                            td
+                                p=account.player4
+                            td
+                                p=account.player5

@@ -63,3 +63,6 @@ background-color: white;
     border: none;
     margin-left: 28%;
 }
+.navbar {
+    background-color: transparent;
+  }

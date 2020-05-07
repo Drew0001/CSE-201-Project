@@ -1,7 +1,7 @@
-extends managerlayout
+extends managerlayoutadmin
 
 block content
-    .container-1
+    .container-1    
         nav.navbar.fixed-top-left.navbar-expand-lg.navbar-dark.scrolling-navbar
             a.navbar-brand(href='#')
                 strong TayLog
@@ -12,17 +12,30 @@ block content
                             | Logout 
                             span.sr-only
                     li.nav-item.active
-                        a.nav-link(href='/playermanager', role='button')
+                        a.nav-link(href='/playermanageradmin', role='button')
                             | Player Manager
                             span.sr-only
                     li.nav-item.active
-                        a.nav-link(href='/account', role='button')
+                        a.nav-link(href='/accountadmin', role='button')
                             | View Account
-                            span.sr-only     
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/add', role='button')
+                            | Add Team
+                            span.sr-only
+        
+
+
+
+
+
+
+
+
             .md-form.mt-0
                 form(action='/search', method='post', name='submitform')
                     input.form-control#team(name ='team' type='text' placeholder='Search' aria-label='Search')
-        .view.intro.hm-purple-light(style='height: 400px;')
+        .view.intro.hm-purple-light(style='height: 400px;')   
 
 
 
@@ -33,22 +46,22 @@ block content
                 tr
                 th Team
                     button.btn.btn-outline-light.btn-xs
-                        a(href='/managerteamup') Up
+                        a(href='/managerteamupadmin') Up
                     button.btn.btn-outline-light.btn-xs
-                        a(href='/managerteamdown') Down
+                        a(href='/managerteamdownadmin') Down
 
 
                 th Confrence
                     button.btn.btn-outline-light.btn-xs
-                        a(href='/managerconfup') Up
+                        a(href='/managerconfupadmin') Up
                     button.btn.btn-outline-light.btn-xs
-                        a(href='/managerconfdown') Down
+                        a(href='/managerconfdownadmin') Down
 
                 th W
 
                 th L                     
 
-                
+                th Functions 
 
                 tbody
                 each account in accounts
@@ -64,5 +77,8 @@ block content
                             p=account.loses
                         td
                             button.btn.btn-outline-light.btn-xs
-                                a(href='/pass/' + account.id) Show Players
-
+                                a(href='/passadmin/' + account.id) Show Players
+                            button.btn.btn-outline-light.btn-xs 
+                                a(href='/remove/' + account.id) Remove
+                            button.btn.btn-outline-light.btn-xs
+                                a(href='/edits/' + account.id) Edit Team Info

@@ -1,0 +1,25 @@
+extends layoutaccount
+
+block content
+    header
+        nav.navbar.fixed-top-left.navbar-expand-lg.navbar-dark.scrolling-navbar
+            a.navbar-brand(href='#')
+                strong TayLog
+            #navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/manager', role='button')
+                            | Go Back 
+                            span.sr-only
+        .view.intro.hm-purple-light(style='height: 400px;')
+    .text-center.py-5
+        .container
+            .row
+                .col-md-12
+                    each user in users
+                        h1 Username
+                            p=user.username
+                            br
+                        h1 Favorite Team
+                            p=user.favteam
+

@@ -1,7 +1,32 @@
 extends addlayout
 
 block content
- 
+    .container-1    
+        nav.navbar.fixed-top-left.navbar-expand-lg.navbar-dark.scrolling-navbar
+            a.navbar-brand(href='#')
+                strong TayLog
+            #navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/users/logout', role='button')
+                            | Logout 
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/manageradmin', role='button')
+                            | Go Back
+                            span.sr-only
+                   
+        
+
+
+
+
+
+
+
+
+            
+        .view.intro.hm-purple-light(style='height: 400px;')
  
  
  
@@ -12,7 +37,39 @@ block content
             label(for='teamname') Team:
             input#teamname(name='teamname', type='text', placeholder='Enter Team Name')
             label(for='confname') Confrence:
-            input#confname(name='confname', type='text', placeholder='Enter Confrence')
+            select#confname(name='confname')
+                option(value='America East') America East
+                option(value='American') American
+                option(value='ASUN') ASUN
+                option(value='Atlantic 10') Atlantic 10
+                option(value='ACC') ACC
+                option(value='Big 12') Big 12
+                option(value='Big East') Big East
+                option(value='Big Sky') Big Sky
+                option(value='Big South') Big South
+                option(value='Big Ten') Big Ten
+                option(value='Big West') Big West
+                option(value='Colonial') Colonial
+                option(value='Conference USA') Conference USA
+                option(value='Horizon') Horizon
+                option(value='Ivy') Ivy
+                option(value='MAAC') MAAC
+                option(value='Mid-American') Mid-American
+                option(value='MEAC') MEAC
+                option(value='Missouri Valley') Missouri Valley
+                option(value='Mountain West') Mountain West
+                option(value='Northeast') Northeast
+                option(value='Ohio Valley') Ohio Valley
+                option(value='Pac-12') Pac-12
+                option(value='Patriot League') Patriot League
+                option(value='SEC') SEC
+                option(value='Southern') Southern
+                option(value='Southland') Southland
+                option(value='SWAC') SWAC
+                option(value='Summit League') Summit League
+                option(value='Sun Belt') Sun Belt
+                option(value='West Coast') West Coast
+                option(value='WAC') WAC
             label(for='password') Starting Lineup:
             input#player1(name='player1', type='text', placeholder='Enter Center')
             input#player2(name='player2', type='text', placeholder='Enter Shooting guard')

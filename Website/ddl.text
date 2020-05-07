@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username STRING NOT NULL,
     password STRING NOT NULL,
-    
+    favteam STRING NOT NULL,
     createdAt DATE,
     updatedAt DATE
 
@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS Users (
 
 
 
-INSERT INTO Users(username, password)
-VALUES('admintest', 'password');
+INSERT INTO Users(username, favTeam, password)
+VALUES('admintest', 'Duke', 'password');
 
 
 
